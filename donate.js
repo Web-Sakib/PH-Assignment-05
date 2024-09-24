@@ -27,6 +27,22 @@ document.getElementById('donate-btn1').addEventListener('click', function () {
     alert('Please input a valid ammount')
   }
 
+  // for transaction 
+  const transaction = document.createElement('div')
+  transaction.innerHTML = `
+  
+  <div class="border p-5 container mx-auto rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold mb-2"> ${inputAmount} Taka is Donated Flood at Noakhali, Bangladesh</h3>
+      <p> ${Date()} </p>
+    </div>
+  
+  `
+
+  // document.getElementById('history-section').appendChild(transaction) // system 1
+  document.getElementById('history-section').prepend(transaction) // system 1
+  
+
+
 })
 
 
