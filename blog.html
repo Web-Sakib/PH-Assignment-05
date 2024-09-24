@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 05</title>
+
+  <!-- Tailwind & Daisy Ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font fontFamily -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navBarBG: "#F9F7F3",
+            btnPrimary: "#B4F461",
+            btnSecondary: "rgba(17, 17, 17, 0.05)",
+            textDescription: "rgba(17, 17, 17, 0.7)",
+          },
+          fontFamily: {
+            Lexend: ["Lexend", "sans-serif"], //Not working
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <header class="sticky top-0 backdrop-blur-xl">
+    <!-- Navbar  -->
+    <nav>
+      <div class="navbar bg-btnSecondary pb-5 px-10">
+        <div class="navbar-start">
+          <a href="./index.html">
+            <button class="btn text-black bg-btnPrimary px-7">Home</button>
+          </a>
+        </div>
+        <div class="navbar-center hidden md:flex">
+          <img src="./assets/logo.png" alt="" />
+          <a class="btn btn-ghost">Donate Bangladesh</a>
+        </div>
+        <div class="navbar-end">
+          <img class="pr-2" src="./assets/coin.png" alt="" />
+          <p><span id="main-balance">10750</span> BDT</p>
+        </div>
+      </div>
+    </nav>
+
+  <!-- FAQ Section  -->
+
+  <section class="container mx-2 sm:mx-auto grid gap-2">
+    <h1 class="font-extrabold text-2xl my-8">Important FAQ</h1>
+    <!-- faq 1 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the DOM in JavaScript?</div>
+      <div class="collapse-content">
+        <p> The DOM (Document Object Model) represents a webpage's structure as a tree of objects. JavaScript interacts with the DOM to dynamically update content, styles, and elements on the page.</p>
+      </div>
+    </div>
+
+    <!-- faq 2 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you select elements from the DOM using JavaScript?</div>
+      <div class="collapse-content">
+        <p>You can select DOM elements using methods like getElementById, getElementsByClassName, querySelector, or querySelectorAll to find elements based on their ID, class, tag, or CSS selector.</p>
+      </div>
+    </div>
+
+    <!-- faq 3 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is an event handler in JavaScript?</div>
+      <div class="collapse-content">
+        <p>An event handler is a function triggered by an event (e.g., a click). Use addEventListener() to attach event handlers to elements, allowing you to handle user interactions like clicks or form submissions.</p>
+      </div>
+    </div>
+
+    <!-- faq 4 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event delegation?</div>
+      <div class="collapse-content">
+        <p>Event delegation assigns a single event listener to a parent element, handling events on its child elements. It optimizes performance by reducing memory usage and leveraging event bubbling to capture events at a higher level.</p>
+      </div>
+    </div>
+
+    <!-- faq 5 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event bubbling, and how can you prevent it?</div>
+      <div class="collapse-content">
+        <p>Event bubbling propagates events from a child element to its parents. Use event.stopPropagation() to prevent an event from bubbling up, stopping it from triggering handlers on parent elements.</p>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>

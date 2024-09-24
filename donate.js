@@ -33,7 +33,7 @@ document.getElementById('donate-btn1').addEventListener('click', function () {
   
   <div class="border p-5 container mx-auto rounded-lg shadow-md">
       <h3 class="text-lg font-semibold mb-2"> ${inputAmount} Taka is Donated Flood at Noakhali, Bangladesh</h3>
-      <p> ${Date()} </p>
+      <p> ${new Date().toLocaleString()} </p>
     </div>
   
   `
