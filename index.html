@@ -58,12 +58,12 @@
 
     <!-- Features -->
     <section class="flex justify-center gap-3 m-5">
-      <button class="btn btn text-black bg-btnPrimary">Donation</button>
-      <button class="btn btn-outline">History</button>
+      <button id="donation-btn" class="btn text-black bg-btnPrimary">Donation</button>
+      <button id="history-btn" class="btn btn-outline">History</button>
     </section>
   </header>
 
-  <main class="container mx-auto">
+  <main id="main-donate-section" class="container mx-auto">
     <!-- card 1 -->
     <section class="border p-5 rounded-lg mb-5">
       <div class="flex flex-col md:flex-row">
@@ -154,9 +154,21 @@
 
   </main>
 
+  <!-- History Section Starts Here -->
+  <section id="history-section" class="hidden grid gap-2">
 
 
-<script src="donate.js"></script>
+    <div class="border p-5 container mx-auto rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold mb-2"> <span>100</span> Taka is Donated for <span>Noakhali Caed</span> </h3>
+      <p> date </p>
+    </div>
+
+
+  </section>
+  <!-- History Section Starts Here -->
+
+  <script src="features.js"></script>
+  <script src="donate.js"></script>
 </body>
 
 </html>
