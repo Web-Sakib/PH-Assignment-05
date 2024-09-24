@@ -13,6 +13,7 @@ function getTextById(id) {
 // Card 1 - Donate button with addEventListener
 document.getElementById('donate-btn1').addEventListener('click', function () {
 
+
   const inputAmount = getInputValueById('card1-input');
   const mainBalance = getTextById('main-balance');
   const cardBalance = getTextById('card1-added-balance')
@@ -22,22 +23,26 @@ document.getElementById('donate-btn1').addEventListener('click', function () {
     document.getElementById('main-balance').innerText = afterDonate
     const afterDonate2 = inputAmount + cardBalance;
     document.getElementById('card1-added-balance').innerText = afterDonate2;
-    document.getElementById('card1-input').value = ' ';
+    document.getElementById('card1-input').value = '';
     alert('You Have donated successfully')
-  }
-  else {
-    alert('Please input a valid amount')
-  }
 
-  // for history transaction 
-  const transaction = document.createElement('div')
-  transaction.innerHTML = ` 
-  <div class="border p-5 container mx-auto rounded-lg shadow-md">
+    // for history transaction 
+    const transaction = document.createElement('div')
+    transaction.innerHTML = ` 
+    <div class="border p-5 container mx-auto rounded-lg shadow-md">
       <h3 class="text-lg font-semibold mb-2"> ${inputAmount} Taka is Donated for flood at Noakhali, Bangladesh</h3>
       <p> ${new Date().toLocaleString()} </p>
     </div>
-  `
-  document.getElementById('history-section').prepend(transaction)
+    `
+    document.getElementById('history-section').prepend(transaction)
+
+  }
+  else {
+    alert('Please input a valid amount')
+    document.getElementById('card1-input').value = '';
+  }
+
+
 
 })
 
@@ -56,20 +61,23 @@ document.getElementById('donate-btn2').addEventListener('click', function () {
     document.getElementById('card2-added-balance').innerText = afterDonate2;
     document.getElementById('card2-input').value = ' ';
     alert('You Have donated successfully')
-  }
-  else {
-    alert('Please input a valid amount')
-  }
 
-  // for history transaction 
-  const transaction = document.createElement('div')
-  transaction.innerHTML = ` 
-  <div class="border p-5 container mx-auto rounded-lg shadow-md">
+    // for history transaction 
+    const transaction = document.createElement('div')
+    transaction.innerHTML = ` 
+    <div class="border p-5 container mx-auto rounded-lg shadow-md">
       <h3 class="text-lg font-semibold mb-2"> ${inputAmount} Taka is Donated for flood relief in Feni, Bangladesh</h3>
       <p> ${new Date().toLocaleString()} </p>
     </div>
-  `
-  document.getElementById('history-section').prepend(transaction)
+    `
+    document.getElementById('history-section').prepend(transaction)
+  }
+  else {
+    alert('Please input a valid amount')
+    document.getElementById('card1-input').value = '';
+  }
+
+
 
 })
 
@@ -87,20 +95,24 @@ document.getElementById('donate-btn3').addEventListener('click', function () {
     document.getElementById('card3-added-balance').innerText = afterDonate2;
     document.getElementById('card3-input').value = ' ';
     alert('You Have donated successfully')
-  }
-  else {
-    alert('Please input a valid amount')
-  }
 
-  // for history transaction 
-  const transaction = document.createElement('div')
-  transaction.innerHTML = ` 
-  <div class="border p-5 container mx-auto rounded-lg shadow-md">
+    // for history transaction 
+    const transaction = document.createElement('div')
+    transaction.innerHTML = ` 
+    <div class="border p-5 container mx-auto rounded-lg shadow-md">
       <h3 class="text-lg font-semibold mb-2"> ${inputAmount} Taka is Donated for injured in the Quota Movement</h3>
       <p> ${new Date().toLocaleString()} </p>
     </div>
-  `
-  document.getElementById('history-section').prepend(transaction)
+    `
+    document.getElementById('history-section').prepend(transaction)
+
+  }
+  else {
+    alert('Please input a valid amount')
+    document.getElementById('card1-input').value = '';
+  }
+
+
 
 })
 

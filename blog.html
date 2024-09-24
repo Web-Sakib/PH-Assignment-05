@@ -27,7 +27,7 @@
             textDescription: "rgba(17, 17, 17, 0.7)",
           },
           fontFamily: {
-            Lexend: ["Lexend", "sans-serif"], //Not working
+            lexend: ["Lexend", "sans-serif"],
           },
         },
       },
@@ -35,14 +35,14 @@
   </script>
 </head>
 
-<body>
+<body class="font-lexend">
   <header class="sticky top-0 backdrop-blur-xl">
-    <!-- Navbar  -->
+    <!-- Navbar starts here-->
     <nav>
       <div class="navbar bg-btnSecondary pb-5 px-10">
         <div class="navbar-start">
           <a href="./index.html">
-            <button class="btn text-black bg-btnPrimary px-7">Home</button>
+            <button class="btn text-black bg-btnPrimary px-7 text-xl">Home</button>
           </a>
         </div>
         <div class="navbar-center hidden md:flex">
@@ -51,15 +51,17 @@
         </div>
         <div class="navbar-end">
           <img class="pr-2" src="./assets/coin.png" alt="" />
-          <p><span id="main-balance">25000</span> BDT</p>
+          <p class="text-xl"><span id="main-balance ">25000</span> BDT</p>
         </div>
       </div>
     </nav>
+    <!-- Navbar ends here-->
+
 
   <!-- FAQ Section  -->
 
   <section class="container mx-auto grid gap-2">
-    <h1 class="font-extrabold text-2xl my-8">Important FAQ</h1>
+    <h1 class="font-extrabold text-2xl my-8 mx-auto">Important FAQ</h1>
     <!-- faq 1 -->
     <div class="collapse collapse-arrow bg-base-200">
       <input type="radio" name="my-accordion-2" checked="checked" />

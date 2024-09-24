@@ -27,7 +27,7 @@
             textDescription: "rgba(17, 17, 17, 0.7)",
           },
           fontFamily: {
-            Lexend: ["Lexend", "sans-serif"], //Not working
+            lexend: ["Lexend", "sans-serif"],
           },
         },
       },
@@ -35,14 +35,14 @@
   </script>
 </head>
 
-<body>
+<body class="font-lexend">
   <header class="sticky top-0 backdrop-blur-xl">
     <!-- Navbar starts here-->
     <nav>
       <div class="navbar bg-btnSecondary pb-5 px-10">
         <div class="navbar-start">
           <a href="./blog.html">
-            <button class="btn text-black bg-btnPrimary px-7">Blog</button>
+            <button class="btn text-black bg-btnPrimary px-7 text-xl">Blog</button>
           </a>
         </div>
         <div class="navbar-center hidden md:flex">
@@ -51,7 +51,7 @@
         </div>
         <div class="navbar-end">
           <img class="pr-2" src="./assets/coin.png" alt="" />
-          <p><span id="main-balance">25000</span> BDT</p>
+          <p class="text-xl"><span id="main-balance">25000</span> BDT</p>
         </div>
       </div>
     </nav>
@@ -59,8 +59,8 @@
 
     <!-- Feature button starts here -->
     <section class="flex justify-center gap-3 m-5">
-      <button id="donation-btn" class="btn text-black bg-btnPrimary">Donation</button>
-      <button id="history-btn" class="btn btn-outline">History</button>
+      <button id="donation-btn" class="btn text-black bg-btnPrimary text-xl ">Donation</button>
+      <button id="history-btn" class="btn btn-outline text-xl">History</button>
     </section>
     <!-- Feature button starts here -->
   </header>
@@ -79,7 +79,7 @@
               <span id="card1-added-balance">1000</span> BDT
             </button>
           </div>
-          <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+          <h2 class="card-title text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
           <p>
             The recent floods in Noakhali have caused significant damage to
             homes infrastructure. Your donation will help provide essential
@@ -89,7 +89,7 @@
             lives of those in need.
           </p>
           <input id="card1-input" type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
-          <button id="donate-btn1" class="btn text-black bg-btnPrimary">Donate Now</button>
+          <button id="donate-btn1" class="btn text-black bg-btnPrimary text-xl">Donate Now</button>
         </div>
       </div>
     </section>
@@ -107,7 +107,7 @@
               <span id="card2-added-balance">2000</span> BDT
             </button>
           </div>
-          <h2 class="card-title">
+          <h2 class="card-title text-3xl font-bold">
             Donate for Flood Relief in Feni, Bangladesh
           </h2>
           <p>
@@ -121,7 +121,7 @@
             urgent need.
           </p>
           <input id="card2-input" type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
-          <button id="donate-btn2" class="btn text-black bg-btnPrimary">Donate Now</button>
+          <button id="donate-btn2" class="btn text-black bg-btnPrimary text-xl">Donate Now</button>
         </div>
       </div>
     </section>
@@ -139,7 +139,7 @@
               <span id="card3-added-balance">3000</span> BDT
             </button>
           </div>
-          <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+          <h2 class="card-title text-3xl font-bold ">Aid for Injured in the Quota Movement</h2>
           <p>
             The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals.
             Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those
@@ -148,7 +148,7 @@
             their recovery. Please consider making a donation to support these brave individuals in their time of need.
           </p>
           <input id="card3-input" type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
-          <button id="donate-btn3" class="btn text-black bg-btnPrimary">Donate Now</button>
+          <button id="donate-btn3" class="btn text-black bg-btnPrimary text-xl">Donate Now</button>
         </div>
       </div>
     </section>
@@ -165,8 +165,8 @@
 
 
   <script src="history.js"></script>
-  <script src="features.js"></script>
   <script src="donate.js"></script>
+  <script src="features.js"></script>
 </body>
 
 </html>
