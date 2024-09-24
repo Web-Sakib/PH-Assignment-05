@@ -37,7 +37,7 @@
 
 <body>
   <header class="sticky top-0 backdrop-blur-xl">
-    <!-- Navbar  -->
+    <!-- Navbar starts here-->
     <nav>
       <div class="navbar bg-btnSecondary pb-5 px-10">
         <div class="navbar-start">
@@ -47,20 +47,22 @@
         </div>
         <div class="navbar-center hidden md:flex">
           <img src="./assets/logo.png" alt="" />
-          <a class="btn btn-ghost">Donate Bangladesh</a>
+          <a class="font-bold text-3xl ml-5">Donate Bangladesh</a>
         </div>
         <div class="navbar-end">
           <img class="pr-2" src="./assets/coin.png" alt="" />
-          <p><span id="main-balance">10750</span> BDT</p>
+          <p><span id="main-balance">25000</span> BDT</p>
         </div>
       </div>
     </nav>
+    <!-- Navbar ends here-->
 
-    <!-- Features -->
+    <!-- Feature button starts here -->
     <section class="flex justify-center gap-3 m-5">
       <button id="donation-btn" class="btn text-black bg-btnPrimary">Donation</button>
       <button id="history-btn" class="btn btn-outline">History</button>
     </section>
+    <!-- Feature button starts here -->
   </header>
 
   <main id="main-donate-section" class="container mx-auto">
@@ -102,11 +104,11 @@
           <div>
             <button class="btn">
               <img src="./assets/coin.png" alt="" />
-              <span>10500</span> BDT
+              <span id="card2-added-balance">2000</span> BDT
             </button>
           </div>
           <h2 class="card-title">
-            Donate for Flood Relief in Feni,Bangladesh
+            Donate for Flood Relief in Feni, Bangladesh
           </h2>
           <p>
             The recent floods in Feni have devastated local communities,
@@ -118,8 +120,8 @@
             difference. Please consider donating today to assist those in
             urgent need.
           </p>
-          <input type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
-          <button class="btn text-black bg-btnPrimary">Donate Now</button>
+          <input id="card2-input" type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
+          <button id="donate-btn2" class="btn text-black bg-btnPrimary">Donate Now</button>
         </div>
       </div>
     </section>
@@ -134,20 +136,19 @@
           <div>
             <button class="btn">
               <img src="./assets/coin.png" alt="" />
-              <span>30250</span> BDT
+              <span id="card3-added-balance">3000</span> BDT
             </button>
           </div>
-          <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+          <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
           <p>
-            The recent floods in Noakhali have caused significant damage to
-            homes infrastructure. Your donation will help provide essential
-            supplies and to those affected by this disaster. Every
-            contribution, big or small, makes difference. Please join us in
-            supporting the relief efforts and making a positive impact on the
-            lives of those in need.
+            The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals.
+            Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those
+            affected. By contributing, you help ensure that injured individuals receive the care and support they need
+            during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in
+            their recovery. Please consider making a donation to support these brave individuals in their time of need.
           </p>
-          <input type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
-          <button class="btn text-black bg-btnPrimary">Donate Now</button>
+          <input id="card3-input" type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
+          <button id="donate-btn3" class="btn text-black bg-btnPrimary">Donate Now</button>
         </div>
       </div>
     </section>
@@ -156,9 +157,12 @@
 
   <!-- History Section Starts Here -->
   <section id="history-section" class="hidden grid gap-2">
-
   </section>
   <!-- History Section Starts Here -->
+
+
+
+
 
   <script src="history.js"></script>
   <script src="features.js"></script>
