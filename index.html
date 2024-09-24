@@ -2,8 +2,8 @@
 <html lang="en" data-theme="light">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Assignment 05</title>
 
   <!-- Tailwind & Daisy Ui -->
@@ -11,9 +11,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Font fontFamily -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
 
   <!-- Tailwind Configuration -->
   <script>
@@ -21,38 +21,37 @@
       theme: {
         extend: {
           colors: {
-            navBarBG: '#F9F7F3',
-            btnPrimary: '#B4F461',
-            btnSecondary: 'rgba(17, 17, 17, 0.05)',
-            textDescription: 'rgba(17, 17, 17, 0.7)',
-
+            navBarBG: "#F9F7F3",
+            btnPrimary: "#B4F461",
+            btnSecondary: "rgba(17, 17, 17, 0.05)",
+            textDescription: "rgba(17, 17, 17, 0.7)",
           },
           fontFamily: {
-            Lexend: ['Lexend', 'sans-serif'], //Not working
-          }
-        }
-      }
-    }
+            Lexend: ["Lexend", "sans-serif"], //Not working
+          },
+        },
+      },
+    };
   </script>
-
 </head>
 
 <body>
-
-  <Header class="sticky top-0 backdrop-blur-xl">
+  <header class="sticky top-0 backdrop-blur-xl">
     <!-- Navbar  -->
     <nav>
       <div class="navbar bg-btnSecondary pb-5 px-10">
         <div class="navbar-start">
-          <a href=""> <button class="btn text-black bg-btnPrimary px-7">Blog</button> </a>
+          <a href="">
+            <button class="btn text-black bg-btnPrimary px-7">Blog</button>
+          </a>
         </div>
         <div class="navbar-center hidden md:flex">
-          <img src="/assets/logo.png" alt="">
-          <a class="btn btn-ghost ">Donate Bangladesh</a>
+          <img src="/assets/logo.png" alt="" />
+          <a class="btn btn-ghost">Donate Bangladesh</a>
         </div>
         <div class="navbar-end">
-          <img class="pr-2" src="/assets/coin.png" alt="">
-          <p> <span>10750</span> BDT </p>
+          <img class="pr-2" src="/assets/coin.png" alt="" />
+          <p><span id="main-balance">10750</span> BDT</p>
         </div>
       </div>
     </nav>
@@ -62,31 +61,33 @@
       <button class="btn btn text-black bg-btnPrimary">Donation</button>
       <button class="btn btn-outline">History</button>
     </section>
-
-  </Header>
+  </header>
 
   <main class="container mx-auto">
-
     <!-- card 1 -->
     <section class="border p-5 rounded-lg mb-5">
       <div class="flex flex-col md:flex-row">
         <figure class="md:w-1/2 flex items-center">
-          <img class="w-full" src="/assets/noakhali.png">
+          <img class="w-full" src="/assets/noakhali.png" />
         </figure>
         <div class="card-body md:w-1/2">
           <div>
             <button class="btn">
-              <img src="/assets/coin.png" alt="">
-              <span>20700</span> BDT</button>
+              <img src="/assets/coin.png" alt="" />
+              <span id="card1-added-balance">1000</span> BDT
+            </button>
           </div>
           <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-          <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
-            help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
-            makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
-            of
-            those in need.</p>
-          <input type="text" class="input input-bordered w-full " placeholder="Write Donation Amount" />
-          <button class="btn text-black bg-btnPrimary">Donate Now</button>
+          <p>
+            The recent floods in Noakhali have caused significant damage to
+            homes infrastructure. Your donation will help provide essential
+            supplies and to those affected by this disaster. Every
+            contribution, big or small, makes difference. Please join us in
+            supporting the relief efforts and making a positive impact on the
+            lives of those in need.
+          </p>
+          <input id="card1-input" type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
+          <button id="donate-btn1" class="btn text-black bg-btnPrimary">Donate Now</button>
         </div>
       </div>
     </section>
@@ -95,21 +96,29 @@
     <section class="border p-5 rounded-lg mb-5">
       <div class="flex flex-col md:flex-row">
         <figure class="md:w-1/2 flex items-center">
-          <img class="w-full" src="/assets/feni.png">
+          <img class="w-full" src="/assets/feni.png" />
         </figure>
         <div class="card-body md:w-1/2">
           <div>
             <button class="btn">
-              <img src="/assets/coin.png" alt="">
-              <span>10500</span> BDT</button>
+              <img src="/assets/coin.png" alt="" />
+              <span>10500</span> BDT
+            </button>
           </div>
-          <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
-          <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your
-            generous donation will help provide immediate aid, including food, clean water, and medical supplies, to
-            those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the
-            aftermath of this disaster. Every contribution counts towards making a real difference. Please consider
-            donating today to assist those in urgent need.</p>
-          <input type="text" class="input input-bordered w-full " placeholder="Write Donation Amount" />
+          <h2 class="card-title">
+            Donate for Flood Relief in Feni,Bangladesh
+          </h2>
+          <p>
+            The recent floods in Feni have devastated local communities,
+            leading to severe disruption and loss. Your generous donation will
+            help provide immediate aid, including food, clean water, and
+            medical supplies, to those affected by this calamity. Together, we
+            can offer crucial support and help rebuild lives in the aftermath
+            of this disaster. Every contribution counts towards making a real
+            difference. Please consider donating today to assist those in
+            urgent need.
+          </p>
+          <input type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
           <button class="btn text-black bg-btnPrimary">Donate Now</button>
         </div>
       </div>
@@ -119,36 +128,35 @@
     <section class="border p-5 rounded-lg mb-5">
       <div class="flex flex-col md:flex-row">
         <figure class="md:w-1/2 flex items-center">
-          <img class="w-full" src="/assets/quota-protest.png">
+          <img class="w-full" src="/assets/quota-protest.png" />
         </figure>
         <div class="card-body md:w-1/2">
           <div>
             <button class="btn">
-              <img src="/assets/coin.png" alt="">
-              <span>30250</span> BDT</button>
+              <img src="/assets/coin.png" alt="" />
+              <span>30250</span> BDT
+            </button>
           </div>
           <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-          <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
-            help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
-            makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
-            of
-            those in need.</p>
-          <input type="text" class="input input-bordered w-full " placeholder="Write Donation Amount" />
+          <p>
+            The recent floods in Noakhali have caused significant damage to
+            homes infrastructure. Your donation will help provide essential
+            supplies and to those affected by this disaster. Every
+            contribution, big or small, makes difference. Please join us in
+            supporting the relief efforts and making a positive impact on the
+            lives of those in need.
+          </p>
+          <input type="text" class="input input-bordered w-full" placeholder="Write Donation Amount" />
           <button class="btn text-black bg-btnPrimary">Donate Now</button>
         </div>
       </div>
     </section>
 
-
-
-
   </main>
 
 
 
-
-
-
+<script src="donate.js"></script>
 </body>
 
 </html>
